@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0e0e0e;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.product-card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 75, 43, 0.3);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #333;
+}
+
+.product-card h2 {
+    font-size: 1.25rem;
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    font-size: 0.95rem;
+    padding: 0 10px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    background: #ff416c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff4b2b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* Responsive Anpassungen */
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
